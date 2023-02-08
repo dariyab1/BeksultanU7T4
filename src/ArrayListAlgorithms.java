@@ -300,6 +300,9 @@ public class ArrayListAlgorithms {
                     current++;
                 }
             }
+            if(current>highest){
+                modes.add(0,numList[i]);
+            }
 
 
         }
