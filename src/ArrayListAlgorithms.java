@@ -301,13 +301,13 @@ public class ArrayListAlgorithms {
                 }
             }
             if(current>highest){
-                modes.add(0,numList[i]);
+                highest=current;
+                modes.clear();
             }
-
-
+            if(current>=highest){
+                modes.add(numList[i]);
+            }
         }
         return modes;
     }
-
-
 }
